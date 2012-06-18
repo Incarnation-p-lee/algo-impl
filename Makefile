@@ -1,21 +1,24 @@
-.SUFFIXES:
-.SUFFIXES:.o .c
-SHELL		=/bin/sh
-include ./src/Makefile
-
-vpath %.c ./src
-
 CC		=gcc
-
 TAR		=$(addprefix ./bin/,a.out)
 DYNAMIC		=
+OBJS		:=
 
 inc		=./inc
 INC		:=-I$(inc)
 CFlag		=-c -Wall -g
-DFlag		=-shared -fPID
+DFlag		=-shared -fPIC
 GPROF		=-pg
 LFlag		=
+
+
+.SUFFIXES:
+.SUFFIXES:.o .c
+SHELL		=/bin/sh
+include ./src/Makefile
+OBJS		+=$(obj)
+
+vpath %.c ./src
+
 
 .PHONY:all clean prepare tar
 
@@ -24,10 +27,10 @@ all:$(TAR)
 
 $(TAR):CFlag+=$(GPROF)
 $(TAR):LFlag+=$(GPROF)
-$(TAR):$(obj)
+$(TAR):$(OBJS)
 	$(CC) $(LFlag) -o $@ $^
 
-$(obj):%.o:%.c
+$(OBJS):%.o:%.c
 	$(CC) $(CFlag) $(INC) -o $@ $<
 
 .PHONY:clean prepare
@@ -42,4 +45,4 @@ prepare:
 	mkdir inc
 	mkdir src
 	mkdir bin
-.INTERMEDIATE:$(obj)
+.INTERMEDIATE:$(OBJS)

@@ -7,8 +7,10 @@
 #ifndef EXTERNALS_H
 #define EXTERNALS_H
 
-extern int cache_affect(void) __attribute__((pure));
-extern int bitmap(void) __attribute__((pure));
+extern int cache_affect(void);
+extern void bitmap(void);
+extern void lcstr(void);
 extern void lcseq(void);
+extern void sub_m_ay(void);
 
 #endif

@@ -9,7 +9,9 @@
 * 
 * ----------------------REVISION HISTROY------------------------
 * No.	Date	Revised by	Function	Descrition
-* 1	12/6/12	incar-lee	
+* 1	12/6/12	incar-lee			created
+  2	12/6/13	incar-lee	lcseq,		implement longest common subsequence, find one path
+				direct_path
 *
 */
 

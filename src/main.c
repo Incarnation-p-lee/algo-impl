@@ -13,6 +13,7 @@
 * 1	12/4/27	incar-lee	main		add caches.c for the effect of cache
 * 2	12/5/2	incar-lee	main		add bitmap_sort.c for bitmap sort algorithm
 * 3	12/6/12	incar-lee	main		add lc_subseq.c for longest common subsequence
+* 4	12/6/14	incar-lee	main		add longest common substring
 */
 
 /* C Standard */
@@ -35,19 +36,19 @@
 
 int main()
 {
-	int result = 0;
-	result = cache_affect();
+	/* cache affect */
+	/*
+	result = cache_affect();	
 	if(__builtin_expect(!result,1));
 	else
 		goto fail;
+	*/
 		
 
-	result = bitmap();
-	if(__builtin_expect(!result,1));
-	else
-		goto fail;
+	bitmap();				/* bit mapping sort */
+	lcseq();				/* longest commmon subsequence */
+	lcstr();				/* longest commmon substring */
+	sub_m_ay();				/* the max sum sub array in O(n) */
 
-	lcseq();
-fail:
 	return 0;
 }

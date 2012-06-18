@@ -24,7 +24,7 @@
 
 
 
-int bitmap(void)
+void bitmap(void)
 {
 	int res[] = {2,89,26,12,1,13,7,65,76,45,32,9,10,41,132,};
 	char bitmaps[20];
@@ -62,5 +62,5 @@ int bitmap(void)
 	}
 
 	fprintf(stdout,"\n");
-	return 0;
+	return;
 }

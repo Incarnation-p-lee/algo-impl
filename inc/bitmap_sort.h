@@ -7,7 +7,7 @@
 #define BITMAP_H
 
 
-int bitmap(void) __attribute__((pure));
+void bitmap(void);
 
 
 #endif
