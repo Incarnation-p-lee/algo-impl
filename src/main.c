@@ -49,6 +49,8 @@ int main()
 	lcseq();				/* longest commmon subsequence */
 	lcstr();				/* longest commmon substring */
 	sub_m_ay();				/* the max sum sub array in O(n) */
+	factorial_zero();			/* how many zeros a factorial has */
+	ns_add_ver();				/* add implement without any symbol */
 
 	return 0;
 }
