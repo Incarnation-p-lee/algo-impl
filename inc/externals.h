@@ -14,5 +14,7 @@ extern void lcseq(void);
 extern void sub_m_ay(void);
 extern void factorial_zero(void);
 extern void ns_add_ver(void);
+extern void lsym_sstr(void);
+
 
 #endif

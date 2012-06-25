@@ -11,6 +11,10 @@
 
 #include "externals.h"
 
+#ifndef __GNUC__
+#define __attribut__(x)
+#define __builtin_expect(X)
+#endif
 
 typedef struct inpdata
 {
@@ -25,7 +29,6 @@ typedef struct inpdata
 	int elm_8;
 	int elm_9;
 }S_inpdata,*Sp_inpdata;
-
 
 
 #endif

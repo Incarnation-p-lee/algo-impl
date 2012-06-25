@@ -51,6 +51,8 @@ int main()
 	sub_m_ay();				/* the max sum sub array in O(n) */
 	factorial_zero();			/* how many zeros a factorial has */
 	ns_add_ver();				/* add implement without any symbol */
+	lsym_sstr();				/* find the longest symmetry substr of specified string */
+
 
 	return 0;
 }
