@@ -14,6 +14,7 @@
 * 2	12/5/2	incar-lee	main		add bitmap_sort.c for bitmap sort algorithm
 * 3	12/6/12	incar-lee	main		add lc_subseq.c for longest common subsequence
 * 4	12/6/14	incar-lee	main		add longest common substring
+  5	12/6/25	incar-lee	main		add longest symmetry substring
 */
 
 /* C Standard */
@@ -52,6 +53,7 @@ int main()
 	factorial_zero();			/* how many zeros a factorial has */
 	ns_add_ver();				/* add implement without any symbol */
 	lsym_sstr();				/* find the longest symmetry substr of specified string */
+	nstep_way();				/* n step ways */
 
 
 	return 0;
