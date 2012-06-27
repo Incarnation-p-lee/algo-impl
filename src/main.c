@@ -54,7 +54,7 @@ int main()
 	ns_add_ver();				/* add implement without any symbol */
 	lsym_sstr();				/* find the longest symmetry substr of specified string */
 	nstep_way();				/* n step ways */
-
+	right_cs();				/* cycle rigth shift within O(0) */
 
 	return 0;
 }
