@@ -17,6 +17,7 @@ extern void ns_add_ver(void);
 extern void lsym_sstr(void);
 extern void nstep_way(void);
 extern void right_cs(void);
+extern void second_big(void);
 
 
 #endif

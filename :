@@ -1,0 +1,17 @@
+/*
+* FILENAME:		second_big.c/second_big.h
+* CREATED AT:		2012/Jun/28
+* DECRITION:		find the second biggest number of array in O(N)
+* 
+* MODULE:		pro-pearl
+* PLATFORM:		ubuntu-12.04/gcc-4.6.3
+* AUTHOR:		incarnation-lee
+* 
+* ----------------------REVISION HISTROY------------------------
+* No.	Date	Revised by	Function	Descrition
+* 1	12/6/27	incar-lee			created
+*
+*/
+
+
+

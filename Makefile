@@ -5,7 +5,7 @@ OBJS		:=
 
 inc		=./inc
 INC		:=-I$(inc)
-CFlag		=-c -Wall -g
+CFlag		=-c -Wall -g -Winline
 DFlag		=-shared -fPIC
 GPROF		=-pg
 LFlag		=
