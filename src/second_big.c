@@ -55,6 +55,10 @@ void second_big(void)
 	}	
 	return;
 }
+
+/*
+* implement the second biggest number of array within O(N)
+*/
 static inline signed int sed_bgst(int* sdb,size_t len)
 {
 	size_t sbe = 0;

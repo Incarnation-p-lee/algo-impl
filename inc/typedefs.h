@@ -13,7 +13,7 @@
 
 #ifndef __GNUC__
 #define __attribut__(x)
-#define __builtin_expect(X)
+#define __builtin_expect(x,y) (x)
 #endif
 
 typedef struct inpdata
