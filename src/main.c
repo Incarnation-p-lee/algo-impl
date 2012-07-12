@@ -46,6 +46,7 @@ int main()
 	*/
 		
 
+	linc_subseq();				/* the longest increment subsequence */
 	bitmap();				/* bit mapping sort */
 	lcseq();				/* longest commmon subsequence */
 	lcstr();				/* longest commmon substring */
